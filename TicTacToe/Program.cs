@@ -39,7 +39,7 @@ namespace TicTacToe
 
                 #region
                 // Check winning condition
-                char[] playerChars = { 'X', 'O'};
+                char[] playerChars = { 'X', 'O' };
 
                 foreach (char playerChar in playerChars)
                 {
@@ -91,7 +91,7 @@ namespace TicTacToe
                     catch (Exception)
                     {
                         Console.WriteLine("Please enter a number!");
-                        
+
                     }
 
                     if ((input == 1) && (playField[0, 0] == '1'))
@@ -140,7 +140,7 @@ namespace TicTacToe
                 #endregion
 
             } while (true);
-        
+
         }
 
         public static void ResetField()
@@ -160,10 +160,10 @@ namespace TicTacToe
         {
             Console.Clear();
             Console.WriteLine("     |     |    ");
-            Console.WriteLine($"  {playField[0,0]}  |  {playField[0, 1]}  |  {playField[0, 2]}");
+            Console.WriteLine($"  {playField[0, 0]}  |  {playField[0, 1]}  |  {playField[0, 2]}");
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |    ");
-            Console.WriteLine($"  {playField[1,0]}  |  {playField[1, 1]}  |  {playField[1, 2]}");
+            Console.WriteLine($"  {playField[1, 0]}  |  {playField[1, 1]}  |  {playField[1, 2]}");
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |    ");
             Console.WriteLine($"  {playField[2, 0]}  |  {playField[2, 1]}  |  {playField[2, 2]}");
